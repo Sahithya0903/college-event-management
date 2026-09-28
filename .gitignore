@@ -1,0 +1,19 @@
+# Packages downloaded by npm. They can be recreated with npm install.
+node_modules/
+client/node_modules/
+server/node_modules/
+server/uploads/
+
+# Local secrets and machine-specific settings.
+.env
+.env.*
+!.env.example
+
+# Build output, logs, and editor settings.
+dist/
+client/dist/
+server/dist/
+*.log
+.DS_Store
+.vscode/
+.idea/

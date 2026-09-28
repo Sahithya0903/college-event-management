@@ -1,0 +1,43 @@
+// For now, the server stores events in this in-memory list.
+// Later, MongoDB will replace this temporary storage.
+export const events = [
+  {
+    id: 1,
+    name: 'Build for Tomorrow',
+    type: 'TECHNOLOGY',
+    date: '2026-10-18',
+    dateLabel: 'OCT 18',
+    time: '9:00 AM',
+    place: 'Innovation Lab',
+    capacity: 50,
+    color: 'mint',
+    symbol: '↗',
+    description: 'A hands-on hackathon for students who want to turn ideas into useful projects.',
+  },
+  {
+    id: 2,
+    name: 'Campus After Hours',
+    type: 'CULTURE',
+    date: '2026-10-22',
+    dateLabel: 'OCT 22',
+    time: '5:30 PM',
+    place: 'Open Air Theatre',
+    capacity: 100,
+    color: 'peach',
+    symbol: '♫',
+    description: 'An evening of live music, student performances, and good company.',
+  },
+  {
+    id: 3,
+    name: 'Meet the Makers',
+    type: 'CAREERS',
+    date: '2026-10-25',
+    dateLabel: 'OCT 25',
+    time: '2:00 PM',
+    place: 'Seminar Hall B',
+    capacity: 80,
+    color: 'lilac',
+    symbol: '✳',
+    description: 'Hear from local founders about the first steps from campus to career.',
+  },
+]
