@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My profile — Evently</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app-header"></div>
+<header class="page-head">
+  <div class="wrap"><h1>My profile</h1><p>Manage your account details and password.</p></div>
+</header>
+<div class="wrap" style="max-width:560px;">
+  <div class="panel">
+    <h2 style="font-size:1.1rem; margin-bottom:16px;">Account details</h2>
+    <div id="profile-error" class="form-error-banner hidden"></div>
+    <form id="profile-form">
+      <div class="field"><label for="p-name">Full name</label><input id="p-name" required /></div>
+      <div class="field"><label>Email</label><input id="p-email" disabled /></div>
+      <div class="field"><label for="p-phone">Phone</label><input id="p-phone" /></div>
+      <div class="field"><label for="p-org">College or organization</label><input id="p-org" maxlength="160" /><p class="hint">This may be printed on certificates issued for events you attend.</p></div>
+      <button class="btn btn-primary" type="submit">Save changes</button>
+    </form>
+  </div>
+  <div class="panel">
+    <h2 style="font-size:1.1rem; margin-bottom:16px;">Change password</h2>
+    <div id="pw-error" class="form-error-banner hidden"></div>
+    <form id="password-form">
+      <div class="field"><label for="current-pw">Current password</label><input id="current-pw" type="password" required /></div>
+      <div class="field"><label for="new-pw">New password</label><input id="new-pw" type="password" minlength="8" required /></div>
+      <button class="btn btn-outline" type="submit">Update password</button>
+    </form>
+  </div>
+</div>
+<div style="height:40px;"></div>
+<div id="app-footer"></div>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

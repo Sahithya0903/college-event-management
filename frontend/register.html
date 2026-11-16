@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign up — Evently</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app-header"></div>
+<div class="auth-shell">
+  <div class="auth-card">
+    <h1>Create your account</h1>
+    <p class="sub">Join Evently to discover and manage events.</p>
+    <div id="form-error" class="form-error-banner hidden"></div>
+    <div class="role-toggle" id="role-toggle">
+      <button type="button" data-role="user" class="active">I want to attend events</button>
+      <button type="button" data-role="organizer">I want to organize events</button>
+    </div>
+    <form id="register-form">
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" />
+      </div>
+      <div class="field" id="organization-field">
+        <label for="organization" id="organization-label">College or organization</label>
+        <input type="text" id="organization" maxlength="160" autocomplete="organization" required />
+        <p class="hint">Enter the college or organization shown on your certificate.</p>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="8" autocomplete="new-password" />
+        <p class="hint">At least 8 characters.</p>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Create account</button>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+</div>
+<div id="app-footer"></div>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

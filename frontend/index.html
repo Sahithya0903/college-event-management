@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Evently — Discover. Register. Experience.</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎟️</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app-header"></div>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="hero-eyebrow">Your next event is closer than you think</p>
+      <h1>Discover. Register. Experience.</h1>
+      <p class="lead">Find conferences, workshops, festivals and meetups happening around you — and manage your own events from one place.</p>
+      <div class="hero-actions">
+        <a href="events.html" class="btn btn-primary">Explore events</a>
+        <a href="register.html?role=organizer" class="btn btn-ghost">Create an event</a>
+      </div>
+    </div>
+    <div class="hero-stub">
+      <div class="stub-top">
+        <div class="stub-date"><small id="hero-month">OCT</small><span id="hero-day">15</span></div>
+        <div class="seal">🎫</div>
+      </div>
+      <p style="color:var(--slate-light); font-size:0.78rem; margin-bottom:4px;">Featured this week</p>
+      <h3 id="hero-title" style="margin-bottom:10px;">Loading…</h3>
+      <div class="stub-row"><span>Venue</span><b id="hero-venue">—</b></div>
+      <div class="stub-row"><span>Fee</span><b id="hero-fee">—</b></div>
+      <div class="stub-row"><span>Seats left</span><b id="hero-seats">—</b></div>
+      <a href="#" id="hero-link" class="btn btn-primary btn-block" style="margin-top:16px;">View details</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Browse by category</h2>
+    </div>
+    <div class="chip-row" id="category-chips"><div class="spinner"></div></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Popular events</h2>
+      <a href="events.html" class="view-all">View all →</a>
+    </div>
+    <div class="card-grid" id="featured-grid"><div class="spinner"></div></div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrap">
+    <div class="feature">
+      <span class="num">01</span>
+      <h3>Easy registration</h3>
+      <p>Browse, register and pay for events in a few taps — no spreadsheets, no phone calls.</p>
+    </div>
+    <div class="feature">
+      <span class="num">02</span>
+      <h3>Built for organizers</h3>
+      <p>Create events, track seats, mark attendance and issue certificates from one dashboard.</p>
+    </div>
+    <div class="feature">
+      <span class="num">03</span>
+      <h3>Secure by design</h3>
+      <p>JWT authentication, hashed passwords and role-based access keep every account safe.</p>
+    </div>
+  </div>
+</section>
+
+<div id="app-footer"></div>
+
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

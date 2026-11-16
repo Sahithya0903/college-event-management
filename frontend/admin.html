@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin panel — Evently</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app-header"></div>
+<header class="page-head">
+  <div class="wrap">
+    <h1>Admin panel</h1>
+    <p>Platform-wide overview, registrations, payments, users, events, categories and venues.</p>
+  </div>
+</header>
+<div class="wrap dash-layout">
+  <nav class="dash-side" id="admin-nav">
+    <a href="#" data-section="overview" class="active">Overview</a>
+    <a href="#" data-section="events">All events</a>
+    <a href="#" data-section="registrations">Registrations</a>
+    <a href="#" data-section="payments">Payments</a>
+    <a href="#" data-section="users">Users</a>
+    <a href="#" data-section="categories">Categories</a>
+    <a href="#" data-section="venues">Venues</a>
+  </nav>
+  <div id="admin-content"><div class="spinner"></div></div>
+</div>
+<div style="height:50px;"></div>
+<div id="app-footer"></div>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/event-form.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

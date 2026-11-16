@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Organizer dashboard — Evently</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app-header"></div>
+<header class="page-head">
+  <div class="wrap">
+    <h1>Organizer dashboard</h1>
+    <p>Create events, manage participants, mark attendance and issue certificates.</p>
+  </div>
+</header>
+<div class="wrap dash-layout">
+  <nav class="dash-side" id="dash-nav">
+    <a href="#" data-section="events" class="active">My events</a>
+    <a href="#" data-section="participants">Participants</a>
+    <a href="#" data-section="attendance">Attendance</a>
+    <a href="#" data-section="feedback">Feedback</a>
+    <a href="#" data-section="certificates">Certificates</a>
+  </nav>
+  <div id="dash-content"><div class="spinner"></div></div>
+</div>
+<div style="height:50px;"></div>
+<div id="app-footer"></div>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/event-form.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+backend/node_modules/
+backend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/private/*
+!backend/private/.gitkeep
+backend/certificates/*
+!backend/certificates/.gitkeep
